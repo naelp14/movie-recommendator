@@ -19,11 +19,11 @@ struct RecommendationView: View {
         VStack {
             Text("Because you liked:")
                 .font(.headline)
-            Text(movie)
+            Text(data.selectedMovie)
                 .font(.title2)
                 .padding(.bottom, 20)
             
-            List(recommendations, id: \.self) { rec in
+            List(data.recommendations, id: \.self) { rec in
                 Text(rec)
             }
         }
