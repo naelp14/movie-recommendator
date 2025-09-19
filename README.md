@@ -6,4 +6,4 @@ The app allows users to search for a movie, fetch recommendations from an API, a
 ## Documentation
 
 The complete documentation and explanation of this project can be found here:  
-👉 [Read on Medium]() (on progress)
+👉 [Read on Medium](https://puteranathaniel.medium.com/movie-recommendations-with-python-swiftui-0f2042261540)
