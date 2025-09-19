@@ -17,13 +17,18 @@ def train_knn(data_matrix):
     knn.fit(data_matrix)
     return knn
 
-def main():
+def prepare():
     data = read_data()
     mlb, matrix = preprocess(data)
 
     genre_df = pd.DataFrame(matrix, columns=mlb.classes_, index=data.index)
 
     knn = train_knn(genre_df)
+
+    return data, genre_df, knn
+
+def main():
+    data, genre_df, knn = prepare()
     recommnedations = 5
     movie_title = "Toy Story (1995)"
     
